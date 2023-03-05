@@ -1,0 +1,485 @@
+openapi: 3.0.3
+info:
+  title: IPL Tracking - Microservice API
+  description: API description for Tracking microservice.
+  version: 1.0.0
+servers:
+- url: http://localhost:8081/tracking
+paths:
+  /telemetrydata/{dataId}:
+    get:
+      tags:
+      - TelemetryData
+      summary: Get a single telemetry Data info
+      description: This operation is used to retrieve the details of a specific telemetry
+        data.
+      operationId: get_telemetry_data
+      parameters:
+      - name: dataId
+        in: path
+        description: Unique identifier of the Telemetry Data in the database
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/UUID'
+        example: 0af401df-7d7a-1f36-817d-7b0a058d0003
+      responses:
+        "200":
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetTelemetryDataResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "404":
+          description: Resource not found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "500":
+          description: Unexpected errors not mapped to status codes mentioned above
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      x-openapi-router-controller: swagger_server.controllers.telemetry_data_controller
+    put:
+      tags:
+      - TelemetryData
+      summary: Update Telemetry data tracking
+      description: This operation is used to update the details of a specific telemetry
+        data.
+      operationId: update_telemetry_data
+      parameters:
+      - name: dataId
+        in: path
+        description: Unique identifier of the Telemetry Data in the database
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/UUID'
+        example: 0af401df-7d7a-1f36-817d-7b0a058d0003
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateTelemetryDataRequest'
+        required: true
+      responses:
+        "204":
+          description: Updated - No Content
+        "400":
+          description: Parameters missing in request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "404":
+          description: Telemetry Data Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "500":
+          description: Unexpected errors not mapped to status codes mentioned above
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      x-openapi-router-controller: swagger_server.controllers.telemetry_data_controller
+    delete:
+      tags:
+      - TelemetryData
+      summary: Delete Telemetry data tracking
+      description: This operation is used to delete a specific telemetry data.
+      operationId: delete_telemetry_data
+      parameters:
+      - name: dataId
+        in: path
+        description: Unique identifier of the Telemetry Data in the database
+        required: true
+        style: simple
+        explode: false
+        schema:
+          $ref: '#/components/schemas/UUID'
+        example: 0af401df-7d7a-1f36-817d-7b0a058d0003
+      responses:
+        "204":
+          description: Deleted - No Content
+        "400":
+          description: Parameters missing in request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "404":
+          description: Telemetry Data Not Found
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "500":
+          description: Unexpected errors not mapped to status codes mentioned above
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      x-openapi-router-controller: swagger_server.controllers.telemetry_data_controller
+  /telemetrydata:
+    summary: Add telemetry Data
+    get:
+      tags:
+      - TelemetryData
+      summary: Retrieve a list of telemetry data sended
+      description: Retrieve a list of telemetry data
+      operationId: list_telemetry_data
+      responses:
+        "200":
+          description: Ok
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListTelemetryDataResponse'
+        "400":
+          description: Parameters missing in request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "500":
+          description: Unexpected errors not mapped to status codes mentioned above
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      x-openapi-router-controller: swagger_server.controllers.telemetry_data_controller
+    post:
+      tags:
+      - TelemetryData
+      summary: Create Telemetry data tracking
+      description: This operation is used to create new a telemetry data tracking.
+      operationId: create_telemetry_data
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateTelemetryDataRequest'
+        required: true
+      responses:
+        "201":
+          description: Telemetry data Created
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateTelemetryDataResponse'
+        "400":
+          description: Parameters missing in request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "401":
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "403":
+          description: Forbidden
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        "500":
+          description: Unexpected errors not mapped to status codes mentioned above
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+      x-openapi-router-controller: swagger_server.controllers.telemetry_data_controller
+components:
+  schemas:
+    ListTelemetryDataResponse:
+      required:
+      - content
+      - totalResults
+      type: object
+      properties:
+        content:
+          type: array
+          description: list of paged items
+          items:
+            $ref: '#/components/schemas/GetTelemetryDataResponse'
+        totalResults:
+          type: integer
+          description: total number of records
+          format: int64
+          example: 50
+      description: generic paged response
+      example:
+        totalResults: 50
+        content:
+        - dataId:
+            $ref: '#/components/schemas/UUID'
+          vehicleId:
+            $ref: '#/components/schemas/UUID'
+          dataHora:
+            type: string
+            description: Date time for telemetry data
+            example: 01/01/2023 10:10:10
+          latitude:
+            type: number
+            description: Latitude for geolocation from geo data
+            example: 39.7344398
+          longitude:
+            type: number
+            description: Longitude for geolocation from geo data
+            example: -8.836207
+          altimeter:
+            type: number
+            description: Altitude for geolocation from geo data
+            example: 2750
+          telemetryValue:
+            type: number
+            description: Value for velocity from telemetry data
+            example: 7200
+          tipoSensor:
+            $ref: '#/components/schemas/EnumSensorType'
+        - dataId:
+            $ref: '#/components/schemas/UUID'
+          vehicleId:
+            $ref: '#/components/schemas/UUID'
+          dataHora:
+            type: string
+            description: Date time for telemetry data
+            example: 01/01/2023 10:10:10
+          latitude:
+            type: number
+            description: Latitude for geolocation from geo data
+            example: 39.7344398
+          longitude:
+            type: number
+            description: Longitude for geolocation from geo data
+            example: -8.836207
+          altimeter:
+            type: number
+            description: Altitude for geolocation from geo data
+            example: 2750
+          telemetryValue:
+            type: number
+            description: Value for velocity from telemetry data
+            example: 7200
+          tipoSensor:
+            $ref: '#/components/schemas/EnumSensorType'
+    GetTelemetryDataRequest:
+      properties:
+        dataId:
+          $ref: '#/components/schemas/UUID'
+        vehicleId:
+          $ref: '#/components/schemas/UUID'
+        dataHora:
+          type: string
+          description: Date time for telemetry data
+          example: 01/01/2023 10:10:10
+    GetTelemetryDataResponse:
+      properties:
+        dataId:
+          $ref: '#/components/schemas/UUID'
+        vehicleId:
+          $ref: '#/components/schemas/UUID'
+        dataHora:
+          type: string
+          description: Date time for telemetry data
+          example: 01/01/2023 10:10:10
+        latitude:
+          type: number
+          description: Latitude for geolocation from geo data
+          example: 39.7344398
+        longitude:
+          type: number
+          description: Longitude for geolocation from geo data
+          example: -8.836207
+        altimeter:
+          type: number
+          description: Altitude for geolocation from geo data
+          example: 2750
+        telemetryValue:
+          type: number
+          description: Value for velocity from telemetry data
+          example: 7200
+        tipoSensor:
+          $ref: '#/components/schemas/EnumSensorType'
+      example:
+        dataId: 0af401df-7d7a-1f36-817d-7b0a058d0003
+        altimeter: 2750
+        latitude: 39.7344398
+        vehicleId: null
+        tipoSensor: RPM
+        telemetryValue: 7200
+        dataHora: 01/01/2023 10:10:10
+        longitude: -8.836207
+    CreateTelemetryDataResponse:
+      required:
+      - dataId
+      type: object
+      properties:
+        dataId:
+          $ref: '#/components/schemas/UUID'
+      example:
+        dataId: 0af401df-7d7a-1f36-817d-7b0a058d0003
+    UpdateTelemetryDataRequest:
+      required:
+      - dataHora
+      - vehicleId
+      type: object
+      properties:
+        vehicleId:
+          $ref: '#/components/schemas/UUID'
+        dataHora:
+          type: string
+          description: Date time for telemetry data
+          example: 01/01/2023 10:10:10
+        latitude:
+          type: number
+          description: Latitude for geolocation from geo data
+          example: 39.7344398
+        longitude:
+          type: number
+          description: Longitude for geolocation from geo data
+          example: -8.836207
+        altimeter:
+          type: number
+          description: Altitude for geolocation from geo data
+          example: 2750
+        telemetryValue:
+          type: number
+          description: Value for velocity from telemetry data
+          example: 7200
+        tipoSensor:
+          $ref: '#/components/schemas/EnumSensorType'
+    CreateTelemetryDataRequest:
+      required:
+      - dataHora
+      - vehicleId
+      type: object
+      properties:
+        vehicleId:
+          $ref: '#/components/schemas/UUID'
+        dataHora:
+          type: string
+          description: Date time for telemetry data
+          example: 01/01/2023 10:10:10
+        latitude:
+          type: number
+          description: Latitude for geolocation from geo data
+          example: 39.7344398
+        longitude:
+          type: number
+          description: Longitude for geolocation from geo data
+          example: -8.836207
+        altimeter:
+          type: number
+          description: Altitude for geolocation from geo data
+          example: 2750
+        telemetryValue:
+          type: number
+          description: Value for velocity from telemetry data
+          example: 7200
+        tipoSensor:
+          $ref: '#/components/schemas/EnumSensorType'
+    ErrorResponse:
+      required:
+      - errorCode
+      - errorMessage
+      - errorType
+      type: object
+      properties:
+        code:
+          type: string
+          description: Application error code
+          example: XYZ0001
+        type:
+          $ref: '#/components/schemas/ErrorTypeEnum'
+        message:
+          type: string
+          description: Short error explanation
+          example: Unauthorized
+        details:
+          type: string
+          description: Short error detail
+          example: Parameter X has invalid value
+    ErrorTypeEnum:
+      type: string
+      description: Error Type
+      enum:
+      - PERSISTENCE
+      - BUSINESS
+      - COMMUNICATION
+      - UNKNOWN
+    UUID:
+      pattern: "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+      type: string
+      example: 0af401df-7d7a-1f36-817d-7b0a058d0003
+    EnumSensorType:
+      type: string
+      description: type of Sensor
+      enum:
+      - RPM
+      - ODOMETER
+      - SPEED
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+      x-basicInfoFunc: swagger_server.controllers.authorization_controller.check_basicAuth
+
