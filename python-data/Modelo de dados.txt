@@ -1,0 +1,94 @@
+@startuml
+
+entity Customer  {
+  + customerId (PK)
+  --
+  name
+  phone
+  mail
+}
+
+entity Driver  {
+  + driverId (PK)
+  --
+  # customerId(Customer FK)
+  name
+  phone
+  mail
+}
+
+entity Vehicle  {
+  + vehicle id (PK)
+  --
+  # customerOwner(Customer FK)
+  # TelemetryProfile (TelemetryProfile FK)
+  # CurrentDriver(Driver FK)
+  numberPlate
+  vin
+  color
+}
+
+
+entity TelemetryProfile {
+  + telemetryProfile id (PK)
+  --
+  name
+}
+
+entity TelemetryProfileSensors {
+  # TelemetryProfile (TelemetryProfile FK)
+  + Sensor(Sensor FK)  
+  --
+}
+
+entity Sensor {
+  + Sensor id (PK)
+  --
+  #Type (EnumSensorType)
+  name
+  min Value
+  max Max
+  Unit
+}
+
+entity Data {
+  + Data id (PK)
+  --
+  # Vehicle (Vehicle FK)
+  data/Hora
+  # TBD
+}
+entity GeoData {
+  --
+  latitude
+  longitude
+  altimeter
+  TBD
+}
+entity TelemetryData {
+  --
+  # Type (EnumSensorType)
+  Value
+  TBD
+}
+
+entity EnumSensorType {
+  ODOMETER
+  RPM
+  SPEED
+}
+
+Customer -left-o{ Vehicle
+Customer -down-o{ Driver
+TelemetryProfile -right-o{ Vehicle
+Driver -left- Vehicle
+TelemetryProfile -down-|{ TelemetryProfileSensors
+Sensor -up-|{ TelemetryProfileSensors
+Vehicle -down-o{ Data
+
+Sensor -down- EnumSensorType
+TelemetryData -down- EnumSensorType
+Data <|-- GeoData
+Data <|-- TelemetryData
+
+@enduml

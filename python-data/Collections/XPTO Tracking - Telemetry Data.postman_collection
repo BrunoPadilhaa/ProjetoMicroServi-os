@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "d0cc6ba6-afed-450a-b7aa-f6ad941e8463",
+		"name": "XPTO Tracking - Telemetry Data",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Telemetry Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/telemetrydata",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"telemetrydata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Telemetry Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/telemetrydata/:dataId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"telemetrydata",
+						":dataId"
+					],
+					"variable": [
+						{
+							"key": "dataId",
+							"value": "1e1cf9b5-30c8-47be-a7c6-0e53577cadaa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Telemetry Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vehicleId\": \"0af401df-7d7a-1f36-817d-7b0a058d0002\",\r\n  \"dataHora\": \"04/01/2023 10:10:10\",\r\n  \"latitude\": 39.7344398,\r\n  \"longitude\": -8.836207,\r\n  \"altimeter\": 2750,\r\n  \"telemetryValue\": 7200,\r\n  \"tipoSensor\": \"RPM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/telemetrydata",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"telemetrydata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Telemetry Data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/telemetrydata/:dataId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"telemetrydata",
+						":dataId"
+					],
+					"variable": [
+						{
+							"key": "dataId",
+							"value": "1e1cf9b5-30c8-47be-a7c6-0e53577cadaa"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Telemetry Data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vehicleId\": \"0af401df-7d7a-1f36-817d-7b0a058d0003\",\r\n  \"dataHora\": \"01/01/2023 10:10:10\",\r\n  \"latitude\": 39.7344398,\r\n  \"longitude\": -8.836207,\r\n  \"altimeter\": 2750,\r\n  \"telemetryValue\": 7200,\r\n  \"tipoSensor\": \"RPM\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/telemetrydata/:dataId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"telemetrydata",
+						":dataId"
+					],
+					"variable": [
+						{
+							"key": "dataId",
+							"value": "1e1cf9b5-30c8-47be-a7c6-0e53577cadaa"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8081/tracking",
+			"type": "string"
+		}
+	]
+}
