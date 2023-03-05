@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="727px" preserveAspectRatio="none" style="width:757px;height:727px;background:#FFFFFF;" version="1.1" viewBox="0 0 757 727" width="757px" zoomAndPan="magnify"><defs/><g><!--MD5=[2ce0c9fb7f55b1e256ab28a8ea6b25ec]
+class Customer--><g id="elem_Customer"><rect codeLine="1" fill="#F1F1F1" height="113.1875" id="Customer" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="136" x="594.5" y="31.5"/><ellipse cx="625.7" cy="47.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M629.8094,53.5 L622.0906,53.5 L622.0906,41.1094 L629.8094,41.1094 L629.8094,43.2656 L624.5438,43.2656 L624.5438,45.9375 L629.3094,45.9375 L629.3094,48.0938 L624.5438,48.0938 L624.5438,51.3438 L629.8094,51.3438 L629.8094,53.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="643.3" y="52.3467">Customer</text><line style="stroke:#181818;stroke-width:0.5;" x1="595.5" x2="729.5" y1="63.5" y2="63.5"/><ellipse cx="605.5" cy="77.1484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="110" x="614.5" y="80.4951">customerId (PK)</text><line style="stroke:#181818;stroke-width:1.0;" x1="595.5" x2="729.5" y1="87.7969" y2="87.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="600.5" y="104.792">name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="600.5" y="121.0889">phone</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="600.5" y="137.3857">mail</text></g><!--MD5=[eee9d396a8aca12c6c152931e8dc1ab6]
+class Driver--><g id="elem_Driver"><rect codeLine="9" fill="#F1F1F1" height="129.4844" id="Driver" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="203" x="547" y="229"/><ellipse cx="624.25" cy="245" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M628.3594,251 L620.6406,251 L620.6406,238.6094 L628.3594,238.6094 L628.3594,240.7656 L623.0938,240.7656 L623.0938,243.4375 L627.8594,243.4375 L627.8594,245.5938 L623.0938,245.5938 L623.0938,248.8438 L628.3594,248.8438 L628.3594,251 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="644.75" y="249.8467">Driver</text><line style="stroke:#181818;stroke-width:0.5;" x1="548" x2="749" y1="261" y2="261"/><ellipse cx="558" cy="274.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="567" y="277.9951">driverId (PK)</text><line style="stroke:#181818;stroke-width:1.0;" x1="548" x2="749" y1="285.2969" y2="285.2969"/><polygon fill="#FFFF44" points="558,293.9453,562,297.9453,558,301.9453,554,297.9453" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="567" y="302.292">customerId(Customer FK)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="567" y="318.5889">name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="567" y="334.8857">phone</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="567" y="351.1826">mail</text></g><!--MD5=[3aa0d89c6bfdcbf7f32042cedac57549]
+class Vehicle--><g id="elem_Vehicle"><rect codeLine="18" fill="#F1F1F1" height="162.0781" id="Vehicle" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="283" x="276" y="7"/><ellipse cx="388.25" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M392.3594,29 L384.6406,29 L384.6406,16.6094 L392.3594,16.6094 L392.3594,18.7656 L387.0938,18.7656 L387.0938,21.4375 L391.8594,21.4375 L391.8594,23.5938 L387.0938,23.5938 L387.0938,26.8438 L392.3594,26.8438 L392.3594,29 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="408.75" y="27.8467">Vehicle</text><line style="stroke:#181818;stroke-width:0.5;" x1="277" x2="558" y1="39" y2="39"/><ellipse cx="287" cy="52.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="296" y="55.9951">vehicle id (PK)</text><line style="stroke:#181818;stroke-width:1.0;" x1="277" x2="558" y1="63.2969" y2="63.2969"/><polygon fill="#FFFF44" points="287,71.9453,291,75.9453,287,79.9453,283,75.9453" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="210" x="296" y="80.292">customerOwner(Customer FK)</text><polygon fill="#FFFF44" points="287,88.2422,291,92.2422,287,96.2422,283,92.2422" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="257" x="296" y="96.5889">TelemetryProfile (TelemetryProfile FK)</text><polygon fill="#FFFF44" points="287,104.5391,291,108.5391,287,112.5391,283,108.5391" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="296" y="112.8857">CurrentDriver(Driver FK)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="296" y="129.1826">numberPlate</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="19" x="296" y="145.4795">vin</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="296" y="161.7764">color</text></g><!--MD5=[1db454196743ef58c626a20a82728a84]
+class TelemetryProfile--><g id="elem_TelemetryProfile"><rect codeLine="30" fill="#F1F1F1" height="80.5938" id="TelemetryProfile" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="181" x="60" y="47.5"/><ellipse cx="92.1" cy="63.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M96.2094,69.5 L88.4906,69.5 L88.4906,57.1094 L96.2094,57.1094 L96.2094,59.2656 L90.9438,59.2656 L90.9438,61.9375 L95.7094,61.9375 L95.7094,64.0938 L90.9438,64.0938 L90.9438,67.3438 L96.2094,67.3438 L96.2094,69.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111" x="109.9" y="68.3467">TelemetryProfile</text><line style="stroke:#181818;stroke-width:0.5;" x1="61" x2="240" y1="79.5" y2="79.5"/><ellipse cx="71" cy="93.1484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="80" y="96.4951">telemetryProfile id (PK)</text><line style="stroke:#181818;stroke-width:1.0;" x1="61" x2="240" y1="103.7969" y2="103.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="66" y="120.792">name</text></g><!--MD5=[f2418da59cadb261e06a697dfb10a727]
+class TelemetryProfileSensors--><g id="elem_TelemetryProfileSensors"><rect codeLine="36" fill="#F1F1F1" height="80.5938" id="TelemetryProfileSensors" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="283" x="9" y="253"/><ellipse cx="62.25" cy="269" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M66.3594,275 L58.6406,275 L58.6406,262.6094 L66.3594,262.6094 L66.3594,264.7656 L61.0938,264.7656 L61.0938,267.4375 L65.8594,267.4375 L65.8594,269.5938 L61.0938,269.5938 L61.0938,272.8438 L66.3594,272.8438 L66.3594,275 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="168" x="82.75" y="273.8467">TelemetryProfileSensors</text><line style="stroke:#181818;stroke-width:0.5;" x1="10" x2="291" y1="285" y2="285"/><polygon fill="#FFFF44" points="20,293.6484,24,297.6484,20,301.6484,16,297.6484" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="257" x="29" y="301.9951">TelemetryProfile (TelemetryProfile FK)</text><ellipse cx="20" cy="314.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="29" y="318.292">Sensor(Sensor FK)</text><line style="stroke:#181818;stroke-width:1.0;" x1="10" x2="291" y1="325.5938" y2="325.5938"/></g><!--MD5=[97d46ae094d28e0d28828e4b8046fed1]
+class Sensor--><g id="elem_Sensor"><rect codeLine="42" fill="#F1F1F1" height="145.7813" id="Sensor" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="197" x="52" y="418"/><ellipse cx="121.75" cy="434" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M125.8594,440 L118.1406,440 L118.1406,427.6094 L125.8594,427.6094 L125.8594,429.7656 L120.5938,429.7656 L120.5938,432.4375 L125.3594,432.4375 L125.3594,434.5938 L120.5938,434.5938 L120.5938,437.8438 L125.8594,437.8438 L125.8594,440 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="142.25" y="438.8467">Sensor</text><line style="stroke:#181818;stroke-width:0.5;" x1="53" x2="248" y1="450" y2="450"/><ellipse cx="63" cy="463.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="72" y="466.9951">Sensor id (PK)</text><line style="stroke:#181818;stroke-width:1.0;" x1="53" x2="248" y1="474.2969" y2="474.2969"/><polygon fill="#FFFF44" points="63,482.9453,67,486.9453,63,490.9453,59,486.9453" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="72" y="491.292">Type (EnumSensorType)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="72" y="507.5889">name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="72" y="523.8857">min Value</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="72" y="540.1826">max Max</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="72" y="556.4795">Unit</text></g><!--MD5=[60c9ed31c535bee25c55ce21b5b01399]
+class Data--><g id="elem_Data"><rect codeLine="52" fill="#F1F1F1" height="113.1875" id="Data" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="161" x="337" y="237"/><ellipse cx="397.25" cy="253" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M401.3594,259 L393.6406,259 L393.6406,246.6094 L401.3594,246.6094 L401.3594,248.7656 L396.0938,248.7656 L396.0938,251.4375 L400.8594,251.4375 L400.8594,253.5938 L396.0938,253.5938 L396.0938,256.8438 L401.3594,256.8438 L401.3594,259 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="417.75" y="257.8467">Data</text><line style="stroke:#181818;stroke-width:0.5;" x1="338" x2="497" y1="269" y2="269"/><ellipse cx="348" cy="282.6484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="357" y="285.9951">Data id (PK)</text><line style="stroke:#181818;stroke-width:1.0;" x1="338" x2="497" y1="293.2969" y2="293.2969"/><polygon fill="#FFFF44" points="348,301.9453,352,305.9453,348,309.9453,344,305.9453" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="357" y="310.292">Vehicle (Vehicle FK)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="357" y="326.5889">data/Hora</text><polygon fill="none" points="348,334.5391,352,338.5391,348,342.5391,344,338.5391" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="357" y="342.8857">TBD</text></g><!--MD5=[798370fb971c3d466e4e8b6bb3a9227f]
+class GeoData--><g id="elem_GeoData"><rect codeLine="59" fill="#F1F1F1" height="113.1875" id="GeoData" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="93" x="516" y="434.5"/><ellipse cx="531" cy="450.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M535.1094,456.5 L527.3906,456.5 L527.3906,444.1094 L535.1094,444.1094 L535.1094,446.2656 L529.8438,446.2656 L529.8438,448.9375 L534.6094,448.9375 L534.6094,451.0938 L529.8438,451.0938 L529.8438,454.3438 L535.1094,454.3438 L535.1094,456.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="545" y="455.3467">GeoData</text><line style="stroke:#181818;stroke-width:0.5;" x1="517" x2="608" y1="466.5" y2="466.5"/><line style="stroke:#181818;stroke-width:1.0;" x1="517" x2="608" y1="474.5" y2="474.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="522" y="491.4951">latitude</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="522" y="507.792">longitude</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="522" y="524.0889">altimeter</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="522" y="540.3857">TBD</text></g><!--MD5=[08a626af6cb7562c6593024f74888392]
+class TelemetryData--><g id="elem_TelemetryData"><rect codeLine="66" fill="#F1F1F1" height="96.8906" id="TelemetryData" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="197" x="284" y="442.5"/><ellipse cx="327.8" cy="458.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M331.9094,464.5 L324.1906,464.5 L324.1906,452.1094 L331.9094,452.1094 L331.9094,454.2656 L326.6438,454.2656 L326.6438,456.9375 L331.4094,456.9375 L331.4094,459.0938 L326.6438,459.0938 L326.6438,462.3438 L331.9094,462.3438 L331.9094,464.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="348.2" y="463.3467">TelemetryData</text><line style="stroke:#181818;stroke-width:0.5;" x1="285" x2="480" y1="474.5" y2="474.5"/><line style="stroke:#181818;stroke-width:1.0;" x1="285" x2="480" y1="482.5" y2="482.5"/><polygon fill="#FFFF44" points="295,491.1484,299,495.1484,295,499.1484,291,495.1484" style="stroke:#B38D22;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="171" x="304" y="499.4951">Type (EnumSensorType)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="304" y="515.792">Value</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="304" y="532.0889">TBD</text></g><!--MD5=[1fccc8ebfed15296509c69d98bf4f81e]
+class EnumSensorType--><g id="elem_EnumSensorType"><rect codeLine="73" fill="#F1F1F1" height="96.8906" id="EnumSensorType" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="155" x="189" y="624"/><ellipse cx="204" cy="640" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M208.1094,646 L200.3906,646 L200.3906,633.6094 L208.1094,633.6094 L208.1094,635.7656 L202.8438,635.7656 L202.8438,638.4375 L207.6094,638.4375 L207.6094,640.5938 L202.8438,640.5938 L202.8438,643.8438 L208.1094,643.8438 L208.1094,646 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="218" y="644.8467">EnumSensorType</text><line style="stroke:#181818;stroke-width:0.5;" x1="190" x2="343" y1="656" y2="656"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="82" x="195" y="672.9951">ODOMETER</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="195" y="689.292">RPM</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="195" y="705.5889">SPEED</text><line style="stroke:#181818;stroke-width:0.5;" x1="190" x2="343" y1="712.8906" y2="712.8906"/></g><!--MD5=[e24612c40807844925c4210d94f2d318]
+reverse link Vehicle to Customer--><g id="link_Vehicle_Customer"><path codeLine="79" d="M567.37,88 C576.34,88 585.3,88 594.27,88 " fill="none" id="Vehicle-backto-Customer" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="567.14" x2="559.14" y1="88" y2="94"/><line style="stroke:#181818;stroke-width:1.0;" x1="567.14" x2="559.14" y1="88" y2="82"/><line style="stroke:#181818;stroke-width:1.0;" x1="567.14" x2="559.14" y1="88" y2="88"/><ellipse cx="573.14" cy="88" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7216d76088f0b700a6b3e1047713be61]
+link Customer to Driver--><g id="link_Customer_Driver"><path codeLine="80" d="M658.67,144.61 C657.06,168.07 655.16,195.7 653.44,220.68 " fill="none" id="Customer-to-Driver" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="653.4478" x2="658.8754" y1="220.7095" y2="229.1083"/><line style="stroke:#181818;stroke-width:1.0;" x1="653.4478" x2="646.9046" y1="220.7095" y2="228.2717"/><line style="stroke:#181818;stroke-width:1.0;" x1="653.4478" x2="652.89" y1="220.7095" y2="228.69"/><ellipse cx="653.8661" cy="214.7241" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[daa3f1e40189a67a9d9b537bcece776b]
+link TelemetryProfile to Vehicle--><g id="link_TelemetryProfile_Vehicle"><path codeLine="81" d="M241.24,88 C250.02,88 258.81,88 267.6,88 " fill="none" id="TelemetryProfile-to-Vehicle" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="267.66" x2="275.66" y1="88" y2="82"/><line style="stroke:#181818;stroke-width:1.0;" x1="267.66" x2="275.66" y1="88" y2="94"/><line style="stroke:#181818;stroke-width:1.0;" x1="267.66" x2="275.66" y1="88" y2="88"/><ellipse cx="261.66" cy="88" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[7227457bb092ac318691b8b1f8f39355]
+link Vehicle to Driver--><g id="link_Vehicle_Driver"><path codeLine="82" d="M508.47,169.14 C530.94,188.93 554.71,209.88 576.16,228.78 " fill="none" id="Vehicle-Driver" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[95fd74e1c2b4db6c09b1330bd6ca542d]
+link TelemetryProfile to TelemetryProfileSensors--><g id="link_TelemetryProfile_TelemetryProfileSensors"><path codeLine="83" d="M150.5,128.72 C150.5,161.92 150.5,209.36 150.5,244.64 " fill="none" id="TelemetryProfile-to-TelemetryProfileSensors" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="150.5" x2="156.5" y1="244.88" y2="252.88"/><line style="stroke:#181818;stroke-width:1.0;" x1="150.5" x2="144.5" y1="244.88" y2="252.88"/><line style="stroke:#181818;stroke-width:1.0;" x1="150.5" x2="150.5" y1="244.88" y2="252.88"/><line style="stroke:#181818;stroke-width:1.0;" x1="154.5" x2="146.5" y1="242.88" y2="242.88"/></g><!--MD5=[755368c0dda7428a35892d9dd9665fad]
+reverse link TelemetryProfileSensors to Sensor--><g id="link_TelemetryProfileSensors_Sensor"><path codeLine="84" d="M150.5,342.18 C150.5,364.87 150.5,392.48 150.5,417.68 " fill="none" id="TelemetryProfileSensors-backto-Sensor" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="150.5" x2="144.5" y1="342.06" y2="334.06"/><line style="stroke:#181818;stroke-width:1.0;" x1="150.5" x2="156.5" y1="342.06" y2="334.06"/><line style="stroke:#181818;stroke-width:1.0;" x1="150.5" x2="150.5" y1="342.06" y2="334.06"/><line style="stroke:#181818;stroke-width:1.0;" x1="146.5" x2="154.5" y1="344.06" y2="344.06"/></g><!--MD5=[4fd4cb257900489919e8a88b17d3648f]
+link Vehicle to Data--><g id="link_Vehicle_Data"><path codeLine="85" d="M417.5,169.14 C417.5,188.9 417.5,209.81 417.5,228.68 " fill="none" id="Vehicle-to-Data" style="stroke:#181818;stroke-width:1.0;"/><line style="stroke:#181818;stroke-width:1.0;" x1="417.5" x2="423.5" y1="228.92" y2="236.92"/><line style="stroke:#181818;stroke-width:1.0;" x1="417.5" x2="411.5" y1="228.92" y2="236.92"/><line style="stroke:#181818;stroke-width:1.0;" x1="417.5" x2="417.5" y1="228.92" y2="236.92"/><ellipse cx="417.5" cy="222.92" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[56aac7946d61ccce0fae784e2593daf0]
+link Sensor to EnumSensorType--><g id="link_Sensor_EnumSensorType"><path codeLine="87" d="M197.18,564.23 C210.15,584.3 223.9,605.59 235.71,623.86 " fill="none" id="Sensor-EnumSensorType" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[0746916cda4267b7525525c42489a2a1]
+link TelemetryData to EnumSensorType--><g id="link_TelemetryData_EnumSensorType"><path codeLine="88" d="M351.72,539.63 C334.87,565.7 314.06,597.9 297.22,623.96 " fill="none" id="TelemetryData-EnumSensorType" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[13c6da2490578592d072ca9ec9f70939]
+reverse link Data to GeoData--><g id="link_Data_GeoData"><path codeLine="89" d="M470.9,366.49 C487.46,388.83 505.46,413.1 521.09,434.17 " fill="none" id="Data-backto-GeoData" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="465.15,370.49,458.86,350.26,476.39,362.15,465.15,370.49" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[9f76cdd36b7ac30f145275bbdf0861b8]
+reverse link Data to TelemetryData--><g id="link_Data_TelemetryData"><path codeLine="90" d="M403.96,370.11 C399.61,394.45 394.9,420.72 391.01,442.45 " fill="none" id="Data-backto-TelemetryData" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="397.1,368.71,407.52,350.26,410.88,371.18,397.1,368.71" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[5271dc021c970625847866871d8b439b]
+@startuml
+entity Customer  {
+  + customerId (PK)
+  - -
+  name
+  phone
+  mail
+}
+
+entity Driver  {
+  + driverId (PK)
+  - -
+  # customerId(Customer FK)
+  name
+  phone
+  mail
+}
+
+entity Vehicle  {
+  + vehicle id (PK)
+  - -
+  # customerOwner(Customer FK)
+  # TelemetryProfile (TelemetryProfile FK)
+  # CurrentDriver(Driver FK)
+  numberPlate
+  vin
+  color
+}
+
+
+entity TelemetryProfile {
+  + telemetryProfile id (PK)
+  - -
+  name
+}
+
+entity TelemetryProfileSensors {
+  # TelemetryProfile (TelemetryProfile FK)
+  + Sensor(Sensor FK)  
+  - -
+}
+
+entity Sensor {
+  + Sensor id (PK)
+  - -
+  #Type (EnumSensorType)
+  name
+  min Value
+  max Max
+  Unit
+}
+
+entity Data {
+  + Data id (PK)
+  - -
+  # Vehicle (Vehicle FK)
+  data/Hora
+  # TBD
+}
+entity GeoData {
+  - -
+  latitude
+  longitude
+  altimeter
+  TBD
+}
+entity TelemetryData {
+  - -
+  # Type (EnumSensorType)
+  Value
+  TBD
+}
+
+entity EnumSensorType {
+  ODOMETER
+  RPM
+  SPEED
+}
+
+Customer -left-o{ Vehicle
+Customer -down-o{ Driver
+TelemetryProfile -right-o{ Vehicle
+Driver -left- Vehicle
+TelemetryProfile -down-|{ TelemetryProfileSensors
+Sensor -up-|{ TelemetryProfileSensors
+Vehicle -down-o{ Data
+
+Sensor -down- EnumSensorType
+TelemetryData -down- EnumSensorType
+Data <|- - GeoData
+Data <|- - TelemetryData
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
